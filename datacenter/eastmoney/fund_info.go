@@ -206,7 +206,7 @@ type JJCC struct {
 		} `json:"InverstPosition"`
 		// 持仓资产比例
 		// {
-		//   "2021-03-31": [
+		//   "2023-03-31": [
 		//     {
 		//       "FSRQ": "日期",
 		//       "GP":"股票占比（%）",
@@ -220,7 +220,7 @@ type JJCC struct {
 		AssetAllocation map[string][]map[string]string `json:"AssetAllocation"`
 		// 行业占比
 		// {
-		//   "2021-03-31": [
+		//   "2023-03-31": [
 		//     {
 		//         "HYMC": "行业名称",
 		//         "SZ": "",

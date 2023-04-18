@@ -187,7 +187,7 @@ GLOBAL OPTIONS:
    --version, -v               show the version (default: false)
 
 COPYRIGHT:
-   (c) 2021 ctt521
+   (c) 2023 ctt521
 ```
 
 ## exportor
@@ -205,7 +205,7 @@ USAGE:
    将按条件筛选出的股票导出到文件，根据文件后缀名自动判断导出类型。支持的后缀名：[xlsx|csv|json|png|all]，all 表示导出全部支持的类型。
 
 OPTIONS:
-   --filename value, -f value                      指定导出文件名 (default: ./dist/stock.20210509.xlsx) [$XSTOCK_EXPORTOR_FILENAME]
+   --filename value, -f value                      指定导出文件名 (default: ./dist/stock.20230509.xlsx) [$XSTOCK_EXPORTOR_FILENAME]
    --disable_check, -C                             关闭基本面检测，导出所有原始筛选结果 (default: false) [$XSTOCK_EXPORTOR_DISABLE_CHECK]
    --filter.min_roe value                          最低净资产收益率 (%) (default: 8.0)
    --filter.min_netprofit_yoy_ratio value          最低净利润增长率 (%) (default: 0.0)

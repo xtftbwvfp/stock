@@ -27,9 +27,9 @@ type FinaMainData struct {
 	ReportDate string `json:"REPORT_DATE"`
 	// 财报类型：年报、三季报、中报、一季报
 	ReportType FinaReportType `json:"REPORT_TYPE"`
-	// 财报名称: 2021 一季报
+	// 财报名称: 2023 一季报
 	ReportDateName string `json:"REPORT_DATE_NAME"`
-	// 财报年份： 2021
+	// 财报年份： 2023
 	ReportYear       string `json:"REPORT_YEAR"`
 	SecurityTypeCode string `json:"SECURITY_TYPE_CODE"`
 	NoticeDate       string `json:"NOTICE_DATE"`
@@ -213,7 +213,7 @@ func (h HistoricalFinaMainData) FilterByReportType(ctx context.Context, reportTy
 	return result
 }
 
-// FilterByReportYear 按财报年份过滤： 2021
+// FilterByReportYear 按财报年份过滤： 2023
 func (h HistoricalFinaMainData) FilterByReportYear(ctx context.Context, reportYear int) HistoricalFinaMainData {
 	result := HistoricalFinaMainData{}
 	year := fmt.Sprint(reportYear)

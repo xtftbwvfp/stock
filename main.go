@@ -43,7 +43,7 @@ func main() {
 			Email: "kuwen1249163@163.com",
 		},
 	}
-	app.Copyright = "(c) 2021 ctt521"
+	app.Copyright = "(c) 2023 ctt521"
 
 	cli.VersionFlag = &cli.BoolFlag{
 		Name:    "version",
