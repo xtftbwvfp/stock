@@ -15,7 +15,7 @@ func Comment(c *gin.Context) {
 	data := gin.H{
 		"Env":       viper.GetString("env"),
 		"Version":   version.Version,
-		"PageTitle": "InvesTool | 留言",
+		"PageTitle": "Stock | 留言",
 	}
 	c.HTML(http.StatusOK, "comment.html", data)
 	return

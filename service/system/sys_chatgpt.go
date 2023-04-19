@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/sashabaranov/go-openai"
 	"github.com/ykstudy/stock/global"
 	"github.com/ykstudy/stock/model/system"
 	"github.com/ykstudy/stock/model/system/request"

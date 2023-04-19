@@ -754,7 +754,7 @@ func installation(path string, formPath string, toPath string) error {
 func filterFile(paths []string) []string {
 	np := make([]string, 0, len(paths))
 	for _, path := range paths {
-		if ok, _ := skipMacSpecialDocument(path); ok {
+		if ok, _ := skipMacSpecialDocument(nil, path, ""); ok {
 			continue
 		}
 		np = append(np, path)
@@ -762,7 +762,7 @@ func filterFile(paths []string) []string {
 	return np
 }
 
-func skipMacSpecialDocument(src string) (bool, error) {
+func skipMacSpecialDocument(info os.FileInfo, src, dest string) (bool, error) {
 	if strings.Contains(src, ".DS_Store") || strings.Contains(src, "__MACOSX") {
 		return true, nil
 	}

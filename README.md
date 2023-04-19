@@ -8,7 +8,7 @@
 [![GitHub release](https://img.shields.io/github/release/ykstudy/stock.svg)](https://gitHub.com/ykstudy/stock/releases/)
 [![Github all releases](https://img.shields.io/github/downloads/ykstudy/stock/total.svg)](https://gitHub.com/ykstudy/stock/releases/)
 
-InvesTool 项目是使用 Golang 实现的个人投资分析工具，主要是为了提高按基本面选股和基金筛选的效率工具。最初是本地的脚本，后来使用
+Stock 项目是使用 Golang 实现的个人投资分析工具，主要是为了提高按基本面选股和基金筛选的效率工具。最初是本地的脚本，后来使用
 Golang 实现提供命令行版本，目前主要以 Web 网页版为主实现相关功能。数据来源于东方财富网、亿牛网、新浪财经、天天基金。
 
 该程序不构成任何投资建议，仅作为个人对股票、基金投资有限认知的辅助工具，不一定适用于任何人。如果网站对您有帮助，可以点击网页上的广告进行支持：）
@@ -17,12 +17,12 @@ Web 服务使用的是 pink-lady 项目模板
 
 数据接口封装在 datacenter 包中
 
-# InvesTool 解决什么问题？
+# Stock 解决什么问题？
 
-InvesTool 要解决的问题是，在使用东方财富选股器按设置的条件筛选出股票后，通常筛选出的股票数量较多，需要人工对每一支股票的财报指标进行分析以判断是否可以长期持有。
+Stock 要解决的问题是，在使用东方财富选股器按设置的条件筛选出股票后，通常筛选出的股票数量较多，需要人工对每一支股票的财报指标进行分析以判断是否可以长期持有。
 
 需要分析的指标较多，并且有一些指标无法直接获取，需要进行计算或根据历史财务数据进行计算，在大量股票需要分析的时候这是一个繁琐的工作，因此开发了
-InvesTool 来让这个过程自动化。
+Stock 来让这个过程自动化。
 
 # 功能
 

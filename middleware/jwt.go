@@ -2,6 +2,7 @@ package middleware
 
 import (
 	"errors"
+	"github.com/golang-jwt/jwt/v4"
 	"strconv"
 	"time"
 

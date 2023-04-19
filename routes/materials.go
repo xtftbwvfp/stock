@@ -51,7 +51,7 @@ func Materials(c *gin.Context) {
 	data := gin.H{
 		"Env":       viper.GetString("env"),
 		"Version":   version.Version,
-		"PageTitle": "InvesTool | 资料",
+		"PageTitle": "Stock | 资料",
 	}
 	var mlist AllMaterialsList
 	data["AllMaterialsList"] = mlist

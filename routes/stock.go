@@ -23,7 +23,7 @@ func StockIndex(c *gin.Context) {
 	data := gin.H{
 		"Env":          viper.GetString("env"),
 		"Version":      version.Version,
-		"PageTitle":    "InvesTool | 股票",
+		"PageTitle":    "Stock | 股票",
 		"Error":        "",
 		"IndustryList": models.StockIndustryList,
 	}
@@ -43,7 +43,7 @@ func StockSelector(c *gin.Context) {
 	data := gin.H{
 		"Env":       viper.GetString("env"),
 		"Version":   version.Version,
-		"PageTitle": "InvesTool | 股票 | 基本面筛选",
+		"PageTitle": "Stock | 股票 | 基本面筛选",
 		"Error":     "",
 		"Stocks":    models.StockList{},
 	}
@@ -87,7 +87,7 @@ func StockChecker(c *gin.Context) {
 	data := gin.H{
 		"Env":       viper.GetString("env"),
 		"Version":   version.Version,
-		"PageTitle": "InvesTool | 股票 | 个股检测",
+		"PageTitle": "Stock | 股票 | 个股检测",
 		"Error":     "",
 	}
 	param := ParamStockChecker{}

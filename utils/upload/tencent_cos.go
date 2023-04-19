@@ -4,6 +4,7 @@ import (
 	"context"
 	"errors"
 	"fmt"
+	"github.com/tencentyun/cos-go-sdk-v5"
 	"mime/multipart"
 	"net/http"
 	"net/url"

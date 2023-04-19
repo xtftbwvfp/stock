@@ -15,7 +15,7 @@ func About(c *gin.Context) {
 	data := gin.H{
 		"Env":       viper.GetString("env"),
 		"Version":   version.Version,
-		"PageTitle": "InvesTool | 关于",
+		"PageTitle": "Stock | 关于",
 	}
 	c.HTML(http.StatusOK, "about.html", data)
 	return
