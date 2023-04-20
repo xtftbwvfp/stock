@@ -4,11 +4,10 @@
 package main
 
 import (
-	"go.uber.org/zap"
-
 	"github.com/ykstudy/stock/core"
 	"github.com/ykstudy/stock/global"
 	"github.com/ykstudy/stock/initialize"
+	"go.uber.org/zap"
 )
 
 //go:generate go env -w GO111MODULE=on

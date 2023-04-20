@@ -371,6 +371,8 @@ OPTIONS:
 
 ## server项目结构
 
+E:\git\go-callvis\go-callvis.exe -focus upgrade -group pkg,type -limit github.com/ykstudy/stock -ignore github.com/gin-gonic/gin github.com/ykstudy/stock
+
 ```shell
 ├── api
 │   └── v1
